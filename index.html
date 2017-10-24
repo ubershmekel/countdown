@@ -1,0 +1,36 @@
+<html ng-app="plunker">
+    
+    <head>
+      <meta charset="utf-8" />
+      <title>Countdown</title>
+      <script>
+        document.write('<base href="' + document.location + '" />');
+      </script>
+      <link rel="stylesheet" href="style.css" />
+      <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+      <script src="app.js"></script>
+    </head>
+    
+    <body ng-controller="MainCtrl">
+      <h2>Countdown</h2>
+      <div id="countdown">
+        <div>
+          <span>{{ CountDown.days }}</span>
+          <div class="label">Days</div>
+        </div>
+        <div>
+          <span>{{ CountDown.hours }}</span>
+          <div class="label">Hours</div>
+        </div>
+        <div>
+          <span>{{ CountDown.minutes }}</span>
+          <div class="label">Minutes</div>
+        </div>
+        <div>
+          <span>{{ CountDown.seconds }}</span>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+    </body>
+    
+    </html>
